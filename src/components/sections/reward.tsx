@@ -26,7 +26,7 @@ const Reward = () => {
             title: 'Book Video Calls',
             description: 'Use your points to unlock 1-on-1 video calls with the artists you love—no gatekeepers, no BS.',
             shadowColor: 'shadow-glitch-sky',
-            image: '/attachments/phone-in-hand.png'
+        image: '/attachments/phone-in-hand.png'
         }
     ]
 

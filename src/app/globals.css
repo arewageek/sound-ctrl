@@ -128,7 +128,6 @@
 .shadow-glitch-sky {
   box-shadow: #68ecff 5px 5px 0px;
 }
-
 .blue-dotted-bg {
   @apply bg-[url("/attachments/dotted-pattern-1.svg")] bg-center bg-no-repeat;
 }
