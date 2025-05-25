@@ -1,3 +1,4 @@
+import ArtistSection from "@/components/sections/artist-section";
 import CallToAction from "@/components/sections/call-to-action";
 import FAQs from "@/components/sections/faqs";
 import HeroSection from "@/components/sections/hero-section";
@@ -13,6 +14,7 @@ export default function Home() {
       <Reward />
       <CallToAction />
       <FAQs />
+      <ArtistSection />
     </main>
   );
 }

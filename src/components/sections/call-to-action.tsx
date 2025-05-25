@@ -1,5 +1,5 @@
 import React from 'react'
-import GlitchButton, { GlitchButtonGray } from '../buttons/glitch-button'
+import GlitchButton from '../buttons/glitch-button'
 
 const CallToAction = () => {
     return (
@@ -8,8 +8,8 @@ const CallToAction = () => {
                 <h2 className='text-xl lg:text-3xl font-bold text-black uppercase font-familjen'>
                     SIGN UP AND GET REWARDED FOR DOING WHAT YOU ALREADY DO
                 </h2>
-                <div>
-                    <GlitchButtonGray text='Join The Waitlist' />
+                <div className="flex items-center justify-center">
+                    <GlitchButton text='Join The Waitlist' shadow="shadow-glitch-gray" />
                 </div>
             </div>
         </div>

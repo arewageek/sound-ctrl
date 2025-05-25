@@ -12,8 +12,8 @@ const FAQs = () => {
     ]
 
     return (
-        <div className='my-48 w-full p-5 flex items-center justify-center'>
-            <div className='w-full lg:w-2/3 px-4 flex justify-center'>
+        <div className='my-48 w-full p-5 flex flex-col lg:flex-row items-center justify-center'>
+            <div className='w-full lg:w-2/3 px-4 flex flex-col lg:flex-row gap-4 justify-center'>
                 <div className='w-full lg:w-1/3'>
                     <h2 className='text-2xl lg:text-4xl font-bold uppercase'>
                         Got Questions?
