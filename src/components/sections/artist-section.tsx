@@ -18,10 +18,10 @@ const ArtistSection = () => {
                     Are you an Artist?
                 </h2>
             </div>
-            <div className='flex justify-center gap-5 flex-col lg:flex-row h-full'>
+            <div className='flex gap-5 flex-col lg:flex-row items-stretch min-h-full w-full lg:w-4/5 mx-auto'>
                 {blocks.map((b, i) => <ArtistCard key={i} title={b.title} description={b.description} />)}
             </div>
-            <div className="mt-8 flex justify-center w-full">
+            <div className="mt-8 flex justify-center w-full h-full">
                 <GlitchButton text="Claim your fandom" shadow="shadow-glitch-gray" background="bg-primary-100" />
             </div>
         </div>
