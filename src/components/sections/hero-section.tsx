@@ -18,12 +18,16 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="lg:blue-dotted-bg w-full lg:w-2/3 h-fit flex items-end relative ">
+            <div className="w-full lg:w-2/3 h-fit flex items-end relative ">
 
-                <Image src="/attachments/music-stars-mobile.png" alt="Music Stars" width={2000} height={2000} className="h-full -mb-10 " />
+                <div className='lg:hidden block h-full w-full'>
+                    <Image src="/attachments/music-stars.svg" alt="Music Stars" width={1500} height={1000} className="h-full -m b-20 w-full " />
+                </div>
 
-                {/* <Image src="/attachments/music-stars.svg" alt="Music Stars" width={1200} height={1000} className="h-full -m b-10 w-full " /> */}
-                <div className="w-full h-10 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[100pt] after-w-full after:bg-gradient-to-t after:from-white after:to-black"></div>
+                <div className='hidden lg:block h-full w-full blue-dotted-bg'>
+                    <Image src="/attachments/music-stars-mobile.svg" alt="Music Stars" width={1200} height={1000} className="h-full -m b-10 w-full " />
+                    <div className="w-full h-10 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[100pt] after-w-full after:bg-gradient-to-t after:from-white after:to-black"></div>
+                </div>
             </div>
         </div>
     )

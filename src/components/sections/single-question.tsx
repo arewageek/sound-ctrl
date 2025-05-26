@@ -11,7 +11,7 @@ const SingleQuestion = ({ question, answer }: IQuestion) => {
 
     return (
         <div className={`w-full bg-primary-100 shadow-glitch-gray ${isOpen ? "rounded-3xl" : "rounded-[20pt]"} transition-all duration-300 ease-in-out p-5 flex flex-col`}>
-            <div onClick={() => setIsOpen(!isOpen)} className='flex items-center justify-between text-black font-bold text-lg lg:text-xl cursor-pointer uppercase'>
+            <div onClick={() => setIsOpen(!isOpen)} className='flex items-center justify-between text-black font-bold text-sm lg:text-xl cursor-pointer uppercase'>
                 <span>
                     {question}
                 </span>
@@ -20,7 +20,7 @@ const SingleQuestion = ({ question, answer }: IQuestion) => {
                 </span>
             </div>
             <div className={`h-0 overflow-hidden ${isOpen && "h-auto"} transition-all duration-300 ease-in-out`}>
-                <p className='text-black/70 text-sm lg:text-base font-semibold mt-4'>
+                <p className='text-black/70 text-xs lg:text-base font-semibold mt-4'>
                     {answer}
                 </p>
             </div>

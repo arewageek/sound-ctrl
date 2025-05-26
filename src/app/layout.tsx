@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${familjen.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${familjen.variable} antialiased font-familjen overflow-x-hidden`}
       >
         <Navbar />
         {children}

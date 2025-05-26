@@ -69,7 +69,7 @@ const Footer = () => {
                 </div>
                 <div className='flex items-center gap-5'>
                     {socials.map((s, key) => (
-                        <Link href={s.link} key={key} className='text-3xl font-bold hover:text-accent-100 transition-all duration-300'>
+                        <Link href={s.link} key={key} className='text-xl lg:text-3xl font-bold hover:text-accent-100 transition-all duration-300'>
                             {s.icon}
                         </Link>
                     ))}
@@ -77,11 +77,11 @@ const Footer = () => {
             </div>
 
             <div className='w-full lg:w-2/3 flex flex-col lg:flex-row justify-around text-gray-200'>
-                {footerLinks.map((l, key) => <div className='w-full lg:w-1/3'>
-                    <h3 className='text-2xl lg:text-4xl font-bold text-white'>
+                {footerLinks.map((l, key) => <div className='w-full lg:w-1/3 mt-12 md:mt-0'>
+                    <h3 className='text-xl lg:text-4xl font-bold text-white'>
                         {l.title}
                     </h3>
-                    <div className='mt-6 flex flex-col gap-y-3'>
+                    <div className='mt-3 lg:mt-6 flex flex-col gap-y-3'>
                         {l.links.map((l, key) => <FooterLinkItem link={l.link} label={l.label} key={key} />)}
                     </div>
                 </div>)}
