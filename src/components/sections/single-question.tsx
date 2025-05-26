@@ -20,7 +20,7 @@ const SingleQuestion = ({ question, answer }: IQuestion) => {
                 </span>
             </div>
             <div className={`h-0 overflow-hidden ${isOpen && "h-auto"} transition-all duration-300 ease-in-out`}>
-                <p className='text-black/70 text-xs lg:text-base font-semibold mt-4'>
+                <p className='text-black/70 text-xs lg:text-base font-semibold mt-4 leading-loose'>
                     {answer}
                 </p>
             </div>
